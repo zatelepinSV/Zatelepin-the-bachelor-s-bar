@@ -1,0 +1,18 @@
+.hello {
+    display: inline-block;
+    color: red;
+    width: 20%;
+    background-color: mediumslateblue;
+    margin: 200px auto;
+    padding: 50px;
+}
+
+.hello:hover {
+    background-color: grey;
+    color: white;
+    cursor: progress;
+}
+
+body {
+    text-align: center;
+}
