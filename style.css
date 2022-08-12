@@ -1,7 +1,8 @@
 .background {
     background: url("images/bar.jpg") no-repeat center/cover;
     background-size: auto, cover, auto;
-    width: 100vw;
+    width: 100%;
+
     height: 800px;
     position: relative;
     z-index: -1;
@@ -9,6 +10,43 @@
 
 body {
     background-color: black;
+    overflow-x:hidden;
+}
+.block1 {
+    width: 100%;
+}
+.block2 {
+    display: block;
+    box-sizing: border-box;
+    padding: 80px;
+    width: 100%;
+    background-color: #FFFAF0;
+    font-size: 30px;
+    font-family: Constantia;
+}
+.two {
+    display: flex;
+
+}
+.block3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 70px;
+    width: 50vw;
+    height: 100vh;
+    background-color: #400000;
+    color: white;
+    font-size: 30px;
+    font-family: Constantia;
+}
+.image {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+
+
 }
 /*
 .slideshow {

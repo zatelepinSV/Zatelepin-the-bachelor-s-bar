@@ -22,6 +22,24 @@ body {
     vertical-align: middle;
 }
 
+.lorem {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: #f45f0b;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: -2px;
+}
+
 .main-nav__items {
     margin: 0;
     padding: 0;
@@ -45,5 +63,4 @@ body {
 .main-nav__item a:active {
     color: #f45f0b;
 }
-
 
