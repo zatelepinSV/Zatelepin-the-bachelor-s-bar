@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto,sans-serif;
+    font-family: Roboto,Constantia,sans-serif;
     text-align: center;
     margin: 0;
 }
@@ -22,20 +22,20 @@ body {
     vertical-align: middle;
 }
 
-.lorem {
+.logo {
     display: flex;
     position: absolute;
     top: 15px;
     left: 15px;
     height: 50px;
     width: 50px;
-    background-color: #f45f0b;
-    border: 2px solid white;
+    background-color: black;
+    border: 2px solid #f45f0b;
     border-radius: 50%;
-    color: white;
+    color: #f45f0b;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bolder;
     letter-spacing: -2px;
 }
