@@ -1,6 +1,5 @@
 body {
-    font-family: Roboto, sans-serif;
-    /*overflow-x: hidden;*/
+    font-family: Constantia, sans-serif;
     margin: 0;
     background-color: #FFFAF0;
     box-sizing: border-box;
@@ -8,10 +7,11 @@ body {
 
 #background h1 {
     position: absolute;
-    left: 3%;
-    bottom: 5%;
+    right: 5%;
+    bottom: 15%;
+    text-align: center;
     text-transform: uppercase;
-    color: white;
+    color: #FFFAF0;
     font-size: 50px;
 }
 
@@ -23,7 +23,6 @@ body {
 }
 
 .block1 {
-    font-family: Constantia, sans-serif;
     box-sizing: border-box;
     margin: 5%;
     padding: 2%;
@@ -58,55 +57,53 @@ body {
 
 .about {
     display: block;
-    font-family: Constantia, sans-serif;
     box-sizing: border-box;
     margin: 0 10%;
     padding: 2%;
     text-align: center;
     font-size: 24px;
+    border-bottom: 1px solid #000;
 }
+
 .about h1 {
     text-transform: uppercase;
 }
-.follow ul,.follow a {
+
+.follow ul {
     list-style: none;
-    text-decoration: none;
+    padding: 0;
 }
+
+.follow a {
+    position: relative;
+    text-decoration: none;
+    color: #f45f0b;
+}
+
+.follow a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scalex(0);
+    transition: 0.3s;
+}
+
+.follow a:hover:before {
+    color: #000;
+    transform: scalex(1);
+}
+
 .opening, .visit, .follow {
     display: inline-block;
     vertical-align: top;
     padding: 2%;
     margin: 2%;
 }
-/*
-.two {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    font-family: Constantia, sans-serif;
-}
-
-
-.block3 {
-    display: block;
-    width: 40%;
-    box-sizing: border-box;
-    padding: 2%;
-    background-color: black;
-    color: white;
-    font-size: 30px;
-    text-align: center;
-}
-
-.image img {
-    display: block;
-    width: 40%;
-    object-fit: cover;
-    object-position: center;
-}
-
-*/
 .slideshow {
     width: 70%;
     height: 500px;
@@ -115,6 +112,7 @@ body {
     background: #000;
     margin: 100px auto;
 }
+
 .slideshow-item {
     width: 100%;
     height: 100%;
@@ -123,28 +121,34 @@ body {
     animation: slideanim 40s infinite;
     pointer-events: none;
 }
+
 .slideshow-item:nth-child(1),
 .slideshow-item:nth-child(1) img {
     animation-delay: inherit;
 }
+
 .slideshow-item:nth-child(2),
 .slideshow-item:nth-child(2) img {
     animation-delay: 10s;
 }
+
 .slideshow-item:nth-child(3),
 .slideshow-item:nth-child(3) img {
     animation-delay: 20s;
 }
+
 .slideshow-item:nth-child(4),
 .slideshow-item:nth-child(4) img {
     animation-delay: 30s;
 }
+
 .slideshow-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     animation: zoom 40s infinite;
 }
+
 .slideshow-item-text {
     max-width: 50%;
     position: absolute;
@@ -155,15 +159,18 @@ body {
     padding: 20px 30px;
     font-family: Verdana, sans-serif;
 }
+
 .slideshow-item-text h5 {
     font-size: 22px;
     margin: 0 0 10px 0;
     color: #f45f0b;
 }
+
 .slideshow-item-text p {
     font-size: 15px;
     margin-bottom: 10px;
 }
+
 @keyframes slideanim {
     12.5%{
         opacity: 1;
@@ -177,16 +184,19 @@ body {
         opacity: 0;
     }
 }
+
 @keyframes zoom {
     50%{
         transform: scale(1.3);
     }
 }
+
 @media screen and (max-width: 1100px){
     .slideshow-item-text{
         max-width: 75%;
     }
 }
+
 @media screen and (max-width: 456px){
     .slideshow-item-text {
         bottom: 0;
