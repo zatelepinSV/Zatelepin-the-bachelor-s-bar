@@ -4,6 +4,22 @@ body {
     background-color: #FFFAF0;
     box-sizing: border-box;
 }
+#up {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+#up .btn {
+    position: relative;
+    display: block;
+    padding: 20px;
+    background: #201A19;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+    border-radius: 10%;
+    text-decoration: none;
+}
 
 #background h1 {
     position: absolute;
