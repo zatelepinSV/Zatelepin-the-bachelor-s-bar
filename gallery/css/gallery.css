@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'latoregular';
+  src: url('../fonts/lato-regular-webfont.eot');
+  src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+  url('../fonts/lato-regular-webfont.woff') format('woff'),
+  url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+  url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot');
+  src: url('../fonts/fontello.eot#iefix') format('embedded-opentype'),
+  url('../fonts/fontello.woff2') format('woff2'),
+  url('../fonts/fontello.woff') format('woff'),
+  url('../fonts/fontello.ttf') format('truetype'),
+  url('../fonts/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg#fontello') format('svg');
+  }
+}*/
+/*
+.icon-link:before { content: '\e800'; } 
+.icon-cancel:before { content: '\e801'; } 
+.icon-zoom-in:before { content: '\e802'; } */
+
+body {
+  font-family: 'latoregular', sans-serif;
+  font-size: 15px;
+  margin: 0;
+}
+
+.portfolio {
+  background: #f6f9f9;
+  text-align: center;
+  padding-bottom: 100px;
+  /* min-width: 390px;*/
+}
+
+.portfolio-heading {
+  padding-top: 60px;
+  font-size: 41px;
+  margin: 0;
+}
+
+.portfolio-subline {
+  line-height: 23px;
+  padding: 20px 0 65px;
+}
+
+.gallery {
+  font-size: 0; /*delete spaces between child inline-blocks*/
+  max-width: 1170px; /*360 x 3 fixed-width + 3 x (15*2) paddings */
+  margin: 0 auto;
+  position: relative;
+}
+
+.image-container {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.preview {
+  max-width: 360px;
+  width: 100%;
+  /*min-height: 260px;*/
+  object-fit: cover;
+}
+
+.image-container:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: #25a6f7;
+  opacity: 0;
+  transition: all 450ms ease-out;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+.image-container:hover:after {
+  opacity: 0.9;
+  /*-webkit-transform: rotateY(0deg);*/
+  transform: rotateY(0deg);
+}
+
+.hover-buttons {
+  width: 90px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+
+.image-container:hover .hover-buttons {
+  display: inline-block;
+}
+
+.zoom, .link {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.zoom:hover, .link:hover {
+  background: #25a6f7;
+}
+
+.zoom {
+  left: 0;
+}
+
+.link {
+  right: 0;
+}
+
+.zoom:after, .link:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 "fontello";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zoom:after {
+  content: "\e802"
+}
+
+.link:after {
+  content: "\e800";
+}
+
+/*lesson 11*/
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+  background: #fff;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  max-width: 1170px;
+  border: 1px solid grey;
+  padding: 5px;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.popup.active {
+  display: block;
+}
+
+.full-image {
+  width: 1170px;
+  max-width: 100%;
+  /*min-width: 360px;*/
+  max-height: 550px;
+  object-fit: cover;
+  display: none;
+}
+
+.full-image.active {
+  display: block;
+}
+
+.close {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #25a6f7;
+  color: white;
+}
+
+.close:after {
+  font: normal normal normal 14px/1 "fontello";
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e801";
+
+  display: inline-block;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.close:hover {
+  background: #f74c26;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .preview {
+    max-height: 260px;
+    min-height: 260px;
+  }
+}

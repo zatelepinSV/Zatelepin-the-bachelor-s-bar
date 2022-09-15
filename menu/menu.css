@@ -1,0 +1,81 @@
+body {
+    font-family: Constantia, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+.menu {
+
+    font-size: 25px;
+    margin: 200px 0;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    position: relative;
+    background: white;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 10px;
+
+}
+
+label[for="food"] {
+    color: red;
+
+}
+
+label[for="beer"] {
+    color: green;
+
+}
+
+label[for="alcohol"] {
+    color: blue;
+}
+/*
+span {
+    padding: 5px 15px;
+    color: white;
+    border-radius: 12px
+}
+*/
+.beer {
+    display: none;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.food {
+    display: none;
+    background-color: red;
+}
+
+.alcohol {
+    display: none;
+    background-color: blue;
+}
+
+#food:checked ~ .food,
+#beer:checked ~ .beer,
+#alcohol:checked ~ .alcohol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+    width: 40vw;
+
+
+}
+
+#food:checked ~ label[for="food"],
+#drinks:checked ~ label[for="beer"],
+#alcohol:checked ~ label[for="alcohol"] {
+    opacity: 0.3;
+}

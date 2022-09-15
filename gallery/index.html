@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project2</title>
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+<section class="portfolio">
+  <h2 class="portfolio-heading">Showcase your work like a pro.</h2>
+  <div class="portfolio-subline">Contact me if you like my work</div>
+  <div class="gallery">
+    <div class="image-container">
+      <img class="preview" src="img/img-1.jpg" alt="">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-1">zoom image-1</a>
+        <a class="link" href="#">link image-1</a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="img/img-2.jpg" alt="">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-2">zoom image-2</a>
+        <a class="link" href="#">link image-2</a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="img/img-3.jpg" alt="">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-3">zoom image-3</a>
+        <a class="link" href="#">link image-3</a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="img/img-4.jpg" alt="">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-4">zoom image-4</a>
+        <a class="link" href="#">link image-4</a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="img/img-5.jpg" alt="">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-5">zoom image-5</a>
+        <a class="link" href="#">link image-5</a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="img/img-6.jpg" alt="">
+      <div class="hover-buttons overlay popup" style="visibility: visible">
+        <a class="zoom" href="#img-6">zoom image-6</a>
+        <a class="link" href="#">link image-6</a>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="popup">
+      <img id="img-1" class="full-image" src="img/img-1-full.jpg" alt="">
+      <img id="img-2" class="full-image" src="img/img-2.jpg" alt="">
+      <img id="img-3" class="full-image" src="img/img-3.jpg" alt="">
+      <img id="img-4" class="full-image" src="img/img-4.jpg" alt="">
+      <img id="img-5" class="full-image" src="img/img-5.jpg" alt="">
+      <img id="img-6" class="full-image" src="img/img-6.jpg" alt="">
+      <span class="close"></span>
+    </div>
+
+  </div>
+</section>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+        //zoom img onclick
+        $(".zoom").click(function () {
+            $(".hover-buttons").css("visibility", "hidden");
+            $(".overlay").addClass("active");
+            $(".popup").addClass("active");
+
+            var activeImg = $(this).attr("href");
+            $(activeImg).fadeIn();
+        });
+        //close img onclick
+        $(".close").click(function () {
+            $(".overlay").removeClass("active");
+            $(".popup").removeClass("active");
+            $(".full-image").hide();
+            $(".hover-buttons").css("visibility", "visible");
+        });
+
+        $(document).on("click", ".overlay", function() {
+            $(".overlay").removeClass("active");
+            $(".popup").removeClass("active");
+            $(".full-image").hide();
+            $(".hover-buttons").css("visibility", "visible");
+        });
+
+        $(".overlay").click(function () {
+            $(".overlay").removeClass("active");
+            $(".popup").removeClass("active");
+            $(".full-image").hide();
+            $(".hover-buttons").css("visibility", "visible");
+        });
+    });
+</script>
+
+</body>
+</html>
