@@ -11,6 +11,9 @@
   <body>
     <header class="main-header">
       <nav class="main-nav">
+        <a class="menu-link" href="#">
+          <span class="menu--link-item"></span>
+        </a>
         <ul class="main-nav__items">
           <li class="main-nav__item logo">
             <a href="#">bb</a>
@@ -34,7 +37,7 @@
             <a href="gallery/index.html" target="_blank">gallery</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">about us</a>
+            <a href="about_us/index.html">about us</a>
           </li>
           <li class="main-nav__item">
             <a href="#">location</a>
@@ -159,5 +162,19 @@
         </ul>
       </nav>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function (){
+        var link = $('.menu-link');
+        var link_active = $('.menu-link_active');
+
+        link.click(function (){
+          link.toggleClass('menu-link_active');
+        });
+        link_active.click(function (){
+          removeClass('menu-link_active');
+        });
+      });
+    </script>
   </body>
 </html>

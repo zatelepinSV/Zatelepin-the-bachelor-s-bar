@@ -79,3 +79,18 @@ span {
 #alcohol:checked ~ label[for="alcohol"] {
     opacity: 0.3;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    background: #fff;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}

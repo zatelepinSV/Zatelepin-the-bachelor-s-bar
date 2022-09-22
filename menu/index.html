@@ -69,6 +69,7 @@
           </div>
           <div class="alcohol">алкоголь</div>
         </div>
+        <div class="overlay"></div>
       </form>
     </main>
     <!--<footer class="main-footer">
@@ -92,5 +93,18 @@
         </ul>
       </nav>
     </footer> -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function () {
+        $(".alcohol").click(function () {
+          $(".food").css("visibility", "hidden");
+          $(".overlay").addClass("active");
+        })
+        $(".overlay").click(function () {
+          $(".overlay").removeClass("active");
+          $(".food").css("visibility", "visible");
+        })
+      })
+    </script>
   </body>
 </html>
