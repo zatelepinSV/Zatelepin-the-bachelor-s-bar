@@ -1,3 +1,11 @@
+.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 60;
+}
+
 .main-nav {
     position: fixed;
     width: 100%;
@@ -58,14 +66,15 @@
 .main-nav__reservation a:hover {
     color: white;
 }
+
 /* Лого*/
 .logo {
     display: flex;
     position: absolute;
+    padding: 0;
     left: 1.25rem;
     height: 3.125rem;
     width: 3.125rem;
-    background-color: #000;
     border: 2px solid #f45f0b;
     border-radius: 50%;
     justify-content: center;
@@ -74,7 +83,7 @@
     font-weight: bold;
     letter-spacing: -0.125rem;
     transition: all 0.5s;
-    padding: 0;
+    background-color: #000;
 }
 
 .logo a {
@@ -241,17 +250,20 @@
         flex-flow: column;
     }
 
-     .main-nav__item {
-         display: none;
-     }
-     .main-nav__reservation {
-         position: inherit;
-         display: block;
-     }
-     .button {
-         margin: 20px auto;
-     }
-/*бургер*/
+    .main-nav__item {
+        display: none;
+    }
+
+    .main-nav__reservation {
+        position: inherit;
+        display: block;
+    }
+
+    .button {
+        margin: 20px auto;
+    }
+
+    /*бургер*/
     .menu-link {
         display: block;
         width: 3.125rem;
@@ -259,11 +271,16 @@
         background-color: #000;
         border: 2px solid #f45f0b;
         border-radius: 50%;
-        box-shadow: 1px 1px 10px #000;
         position: fixed;
         top: 1.25rem;
         left: 1.25rem;
         z-index: 1;
+        transition: 0.5s;
+    }
+
+    .menu-link:hover {
+        box-shadow: 0 0 30px #f45f0b;
+        transition: 0.5s;
     }
 
     .menu--link-item,
@@ -278,8 +295,8 @@
         top: 50%;
         margin-top: -2px;
         background-color: #f45f0b;
-
     }
+
 
     .menu--link-item:before {
         content: '';
@@ -292,9 +309,11 @@
         margin-top: -10px;
         transition: all 0.2s;
     }
+
     .menu-link_active .menu--link-item {
         background-color: transparent;
     }
+
     .menu-link_active .menu--link-item:after {
         margin-top: 0;
         transform: rotate(135deg);
@@ -304,8 +323,14 @@
         margin-top: 0;
         transform: rotate(-135deg);
     }
+
     .social__item {
         display: flex;
         flex-flow: column;
     }
+}
+
+a .active {
+    color: #fff;
+text-decoration: underline 2px solid red;
 }

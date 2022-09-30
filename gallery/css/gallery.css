@@ -34,9 +34,11 @@
 .icon-zoom-in:before { content: '\e802'; } */
 
 body {
+  margin: 0;
+  background: url("../../images/jim-beam-bourbon-vecher-bar-bokal-butylka-chernyi-burbon.jpg") center center no-repeat scroll;
   font-family: 'latoregular', sans-serif;
   font-size: 15px;
-  margin: 0;
+
 }
 
 .portfolio {
@@ -54,14 +56,30 @@ body {
 
 .portfolio-subline {
   line-height: 23px;
-  padding: 20px 0 65px;
+  padding: 20px 0;
 }
 
-.gallery {
+.buttons {
+  margin: 20px;
+}
+
+.buttons a {
+  padding: 10px 18px;
+  color: black;
+  background-color: #D4DBEFFF;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.gallery-interior, .gallery-food {
   font-size: 0; /*delete spaces between child inline-blocks*/
   max-width: 1170px; /*360 x 3 fixed-width + 3 x (15*2) paddings */
   margin: 0 auto;
   position: relative;
+}
+.gallery-food {
+  display: none;
+
 }
 
 .image-container {
@@ -240,4 +258,54 @@ body {
     max-height: 260px;
     min-height: 260px;
   }
+}
+.forms {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.forms p {
+  text-align: center;
+}
+
+label {
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 15px;
+}
+
+fieldset input {
+  width: 50%;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+textarea{
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+fieldset {
+  border: none;
+}
+.submit {
+  padding: 10px 18px;
+  background-color: black;
+  color: #f45f0b;
+  border: 2px solid #f45f0b;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.submit:active {
+  background: #f45f0b;
+  color: black;
+  box-shadow: 0 0 10px black;
+  border: 2px solid black;
+  font-weight: bold;
 }

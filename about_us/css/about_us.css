@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/*
+.contacts {
+    display: inline-block;
+    width: 50%;
+    height: 30vh;
+    background: #f45f0b;
+    margin-top: 200px;
+}
+.description {
+    margin: 7% 10%;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.875rem;
+    border-bottom: 1px solid #000;
+}
+*/
+img {
+    width: 100vw;
+    align-items: center;
+    opacity: .3;
+}
+
+.slider-line {
+    position: relative;
+    left: 0;
+    background-size: cover;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    transition: all ease 1s;
+}
+.Who-we-are {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.visit-us {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.connect-us {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: -200%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+

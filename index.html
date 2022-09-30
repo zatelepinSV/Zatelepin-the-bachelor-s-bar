@@ -28,19 +28,19 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#">home</a>
+            <a href="index.html" target="_self">home</a>
           </li>
           <li class="main-nav__item">
-            <a href="menu/index.html" target="_blank">menu</a>
+            <a href="menu/menu.html" target="_self">menu</a>
           </li>
           <li class="main-nav__item">
-            <a href="gallery/index.html" target="_blank">gallery</a>
+            <a href="gallery/gallery.html" target="_self">gallery</a>
           </li>
           <li class="main-nav__item">
-            <a href="about_us/index.html">about us</a>
+            <a href="about_us/about_us.html" target="_self">about us</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">location</a>
+            <a href="location/location.html">location</a>
           </li>
         </ul>
       </nav>
@@ -162,7 +162,7 @@
         </ul>
       </nav>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
       $(document).ready(function (){
         var link = $('.menu-link');
@@ -173,6 +173,11 @@
         });
         link_active.click(function (){
           removeClass('menu-link_active');
+        });
+        $('.main-nav__items [href]').each(function () {
+          if (this.href == window.location.href) {
+            $(this).addClass("active");
+          }
         });
       });
     </script>
