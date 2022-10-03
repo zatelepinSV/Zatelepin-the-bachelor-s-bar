@@ -65,10 +65,12 @@ body {
 
 .buttons a {
   padding: 10px 18px;
-  color: black;
-  background-color: #D4DBEFFF;
+  color: #f45f0b;
+  background-color: #000;
   text-decoration: none;
   border-radius: 10px;
+  border: 2px solid #f45f0b;
+  box-shadow: 10px 10px 20px black;
 }
 
 .gallery-interior, .gallery-food {
@@ -87,6 +89,7 @@ body {
   vertical-align: top;
   margin: 15px;
   position: relative;
+  box-shadow: 10px 10px 20px black;
   cursor: pointer;
 }
 
@@ -293,13 +296,14 @@ textarea{
 fieldset {
   border: none;
 }
-.submit {
+.submit, .food, .interior {
   padding: 10px 18px;
   background-color: black;
   color: #f45f0b;
   border: 2px solid #f45f0b;
   border-radius: 10px;
   font-weight: bold;
+  box-shadow: 10px 10px 20px black;
   cursor: pointer;
 }
 .submit:active {
@@ -308,4 +312,22 @@ fieldset {
   box-shadow: 0 0 10px black;
   border: 2px solid black;
   font-weight: bold;
+}
+
+.current a {
+  color: #fff;
+}
+
+@media all and (max-width: 480px) {
+  .portfolio-heading {
+    display: block;
+    margin: 20% auto 10%;
+  }
+}
+
+@media screen and (max-width: 30em)  {
+  .portfolio-heading {
+    display: block;
+    margin: 5% auto;
+  }
 }

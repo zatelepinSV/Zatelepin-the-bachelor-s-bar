@@ -27,7 +27,7 @@
               make a reservation
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item current">
             <a href="index.html" target="_self">home</a>
           </li>
           <li class="main-nav__item">
@@ -163,23 +163,6 @@
       </nav>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function (){
-        var link = $('.menu-link');
-        var link_active = $('.menu-link_active');
-
-        link.click(function (){
-          link.toggleClass('menu-link_active');
-        });
-        link_active.click(function (){
-          removeClass('menu-link_active');
-        });
-        $('.main-nav__items [href]').each(function () {
-          if (this.href == window.location.href) {
-            $(this).addClass("active");
-          }
-        });
-      });
-    </script>
+    <script src="js/home.js"></script>
   </body>
 </html>

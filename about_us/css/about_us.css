@@ -2,26 +2,14 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: Constantia, sans-serif;
+    font-size: 24px;
 }
-/*
-.contacts {
-    display: inline-block;
-    width: 50%;
-    height: 30vh;
-    background: #f45f0b;
-    margin-top: 200px;
-}
-.description {
-    margin: 7% 10%;
-    padding: 2%;
-    text-align: center;
-    font-size: 1.875rem;
-    border-bottom: 1px solid #000;
-}
-*/
+
 img {
     width: 100vw;
-    align-items: center;
+    object-fit: cover;
+
     opacity: .3;
 }
 
@@ -59,3 +47,32 @@ img {
     text-align: center;
 }
 
+
+
+.slider-prev {
+    position: fixed;
+    left: 1%;
+    top: 50%;
+}
+.slider-next{
+    position: fixed;
+    right: 1%;
+    top: 50%;
+}
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: #f45f0b;
+    border: 2px solid black;
+    border-radius: 50%;
+    opacity: 0.6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:active {
+    opacity: 1;
+}
+.current a {
+    color: #fff;
+}

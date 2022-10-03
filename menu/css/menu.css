@@ -2,99 +2,111 @@ body {
     font-family: Constantia, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: grey;
+    background-color: #f6f9f9;
     box-sizing: border-box;
 }
 
-main {
-    margin: 0;
+.bg {
+    background-image: url("../../images/food/food5.jpg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.menu {
-
-    font-size: 25px;
-    margin: 200px 0;
-    text-align: center;
+.cards-holder {
+    display: flex;
+    justify-content: center;
 }
 
-input[type="checkbox"] {
-    display: none;
-}
-
-label {
-    position: relative;
-    background: white;
-    cursor: pointer;
-    padding: 5px 15px;
-    border-radius: 10px;
-
-}
-
-label[for="food"] {
-    color: red;
-
-}
-
-label[for="beer"] {
-    color: green;
-
-}
-
-label[for="alcohol"] {
-    color: blue;
-}
-/*
-span {
-    padding: 5px 15px;
-    color: white;
-    border-radius: 12px
-}
-*/
-.beer {
-    display: none;
+.card {
+    width: 13%;
+    margin-top: -2%;
+    margin-right: 30px;
+    padding: 0 10px;
+    box-shadow: 10px 10px 10px black;
     background-color: #fff;
-    border-radius: 15px;
+}
+
+.card-image,
+.card-title,
+.card-description {
+    display: flex;
+    justify-content: center;
+}
+
+.card-description {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-img {
+    padding-top: 20px;
+}
+
+.card-title {
+    padding-bottom: 10px;
+}
+
+.accordion {
+    margin: 5% auto;
+    display: block;
+    width: 50%;
+
+}
+
+.accordion-wrapper {
+    border: 1px solid #f45f0b;
+    border-radius: 5px;
+}
+
+.accordion-header {
+    padding: 20px;
+    background-color: #000;
+    color: #f45f0b;
+    border: 1px solid #f45f0b;
+    cursor: pointer;
+}
+
+.accordion-header:hover {
+    background-color: #f45f0b;
+    color: #000;
+}
+
+.accordion-body {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in;
+    box-sizing: border-box;
+    margin: 0 10px;
+}
+
+.accordion-body > * {
+    padding: 20px;
+    margin: 0;
+    display: block;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px dotted #000;
+}
+
+td {
+    padding: 10px 0;
 }
 
 .food {
-    display: none;
-    background-color: red;
-}
-
-.alcohol {
-    display: none;
-    background-color: blue;
-}
-
-#food:checked ~ .food,
-#beer:checked ~ .beer,
-#alcohol:checked ~ .alcohol {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2% auto;
-    width: 40vw;
-
-
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
 }
 
-#food:checked ~ label[for="food"],
-#drinks:checked ~ label[for="beer"],
-#alcohol:checked ~ label[for="alcohol"] {
-    opacity: 0.3;
+table {
+    margin: 0 auto;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.9;
-    background: #fff;
-    display: none;
-}
-
-.overlay.active {
-    display: block;
+h5 {
+    color: #89888a;
 }

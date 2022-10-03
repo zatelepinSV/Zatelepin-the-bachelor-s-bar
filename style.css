@@ -229,3 +229,6 @@ body {
 .blue {
     color: blue;
 }
+.main-nav__item .current a {
+    color: #fff;
+}
