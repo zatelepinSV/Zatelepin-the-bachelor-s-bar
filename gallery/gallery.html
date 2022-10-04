@@ -20,7 +20,7 @@
             <a href="#">bb</a>
           </li>
           <li class="main-nav__reservation">
-            <a href="" class="button">
+            <a href="#" class="button">
               <span class="button__line button__line--top"></span>
               <span class="button__line button__line--right"></span>
               <span class="button__line button__line--bottom"></span>
@@ -55,60 +55,58 @@
       </div>
       <div class="gallery-interior">
         <div class="image-container">
-          <img class="preview" src="../images/bar.jpg" alt="bar">
+          <img class="preview" src="../images/interior/bar.jpg" alt="bar">
           <div class="hover-buttons">
             <a class="zoom" href="#img-1">zoom image-1</a>
             <a class="link" href="#">link image-1</a>
           </div>
         </div>
         <div class="image-container">
-          <img class="preview" src="../images/barley-island-beer-pivo.jpg" alt="bokal">
+          <img class="preview" src="../images/different/bokal_piva.jpg" alt="bokal">
           <div class="hover-buttons">
             <a class="zoom" href="#img-2">zoom image-2</a>
             <a class="link" href="#">link image-2</a>
           </div>
         </div>
         <div class="image-container">
-          <img class="preview" src="../images/bar-napitki-alkogol.jpg" alt="">
+          <img class="preview" src="../images/different/bottles.jpg" alt="bottles">
           <div class="hover-buttons">
             <a class="zoom" href="#img-3">zoom image-3</a>
             <a class="link" href="#">link image-3</a>
           </div>
         </div>
         <div class="image-container">
-          <img class="preview" src="../images/bar-wine-whats-next-bar.jpg" alt="">
+          <img class="preview" src="../images/different/coca-cola.jpg" alt="coca-cola">
           <div class="hover-buttons">
             <a class="zoom" href="#img-4">zoom image-4</a>
             <a class="link" href="#">link image-4</a>
           </div>
         </div>
         <div class="image-container">
-          <img class="preview" src="../images/jim-beam-bourbon-vecher-bar-bokal-butylka-chernyi-burbon.jpg" alt="">
+          <img class="preview" src="../images/different/jim-beam.jpg" alt="jim-beam">
           <div class="hover-buttons">
             <a class="zoom" href="#img-5">zoom image-5</a>
             <a class="link" href="#">link image-5</a>
           </div>
         </div>
         <div class="image-container">
-          <img class="preview image6" src="../images/bar-stoika-vypivka-alkogol-butylki-stulia.jpg" alt="">
+          <img class="preview image6" src="../images/interior/bar-stoika.jpg" alt="bar">
           <div class="hover-buttons">
             <a class="zoom" href="#img-6">zoom image-6</a>
             <a class="link" href="#">link image-6</a>
           </div>
         </div>
-
         <div class="overlay"></div>
         <div class="popup">
-          <img id="img-1" class="full-image" src="../images/bar.jpg" alt="bar">
-          <img id="img-2" class="full-image" src="../images/barley-island-beer-pivo.jpg" alt="bokal">
-          <img id="img-3" class="full-image" src="../images/bar-napitki-alkogol.jpg" alt="">
-          <img id="img-4" class="full-image" src="../images/bar-wine-whats-next-bar.jpg" alt="">
+          <img id="img-1" class="full-image" src="../images/interior/bar.jpg" alt="bar">
+          <img id="img-2" class="full-image" src="../images/different/bokal_piva.jpg" alt="bokal">
+          <img id="img-3" class="full-image" src="../images/different/bottles.jpg" alt="bottles">
+          <img id="img-4" class="full-image" src="../images/different/coca-cola.jpg" alt="coca-cola">
           <img id="img-5" class="full-image"
-               src="../images/jim-beam-bourbon-vecher-bar-bokal-butylka-chernyi-burbon.jpg" alt="">
-          <img id="img-6" class="full-image" src="../images/bar-stoika-vypivka-alkogol-butylki-stulia.jpg" alt="">
-          <span class="close"></span>
+               src="../images/different/jim-beam.jpg" alt="jim-beam">
+          <img id="img-6" class="full-image" src="../images/interior/bar-stoika.jpg" alt="barnaya stoika">
+          <span class="button-close"></span>
         </div>
-
       </div>
       <div class="gallery-food">
         <div class="image-container">
@@ -153,7 +151,6 @@
             <a class="link" href="#">link image-12</a>
           </div>
         </div>
-
         <div class="overlay"></div>
         <div class="popup">
           <img id="img-7" class="full-image" src="../images/food/food1.jpg" alt="bar">
@@ -162,28 +159,43 @@
           <img id="img-10" class="full-image" src="../images/food/food4.jpg" alt="">
           <img id="img-11" class="full-image" src="../images/food/food5.jpg" alt="">
           <img id="img-12" class="full-image" src="../images/food/food6.jpg" alt="">
-          <span class="close"></span>
+          <span class="button-close"></span>
         </div>
-
       </div>
     </section>
-    <section class="forms">
-      <form action="#">
-        <p><i>Share with us your impressions </i></p>
-        <p><i>Leave your review - we will publish it</i></p>
-        <fieldset class="">
-          <label for="name">Name <em>*</em></label>
-          <input id="name" placeholder="Your name" required><br>
-          <label for="email">Email <em>*</em></label>
-          <input id="email" placeholder="E-mail" required><br>
-          <label for="comments"></label>
-          <textarea id="comments" placeholder="Your feedback..."></textarea>
-        </fieldset>
-        <p><input class="submit" type="submit" value="Submit"></p>
-      </form>
-
-
-    </section>
+    <div class="reservation">
+      <div class="bg-reservation"></div>
+      <div class="box">
+        <div class="close">
+          <span class="btn-close"></span>
+        </div>
+        <form action="#" class="form">
+          <h1 class="form__title">Table reservation</h1>
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder=" " required>
+            <label class="form__label">Name</label>
+          </div>
+          <div class="form__group">
+            <input type="date" class="form__input" placeholder=" ">
+            <label class="form__label">Date</label>
+          </div>
+          <div class="form__group">
+            <input type="number" class="form__input" placeholder=" ">
+            <label class="form__label">Humans</label>
+          </div>
+          <div class="form__group">
+            <input type="time" class="form__input" placeholder=" ">
+            <label class="form__label">Time</label>
+          </div>
+          <div class="form__group">
+            <input type="tel" class="form__input" placeholder=" " required>
+            <label class="form__label">Phone number</label>
+          </div>
+          <button class="form__button">Reserved</button>
+          <button type="reset" class="form__button">Clear</button>
+        </form>
+      </div>
+    </div>
     <footer class="main-footer">
       <nav>
         <ul class="social">
@@ -207,6 +219,6 @@
     </footer>
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="js/gallery.js"></script>
-
+    <script src="../reservation/reservation.js"></script>
   </body>
 </html>

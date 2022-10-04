@@ -9,7 +9,7 @@ $(function () {
     $(activeImg).fadeIn();
   });
   //close img onclick
-  $(".close").click(function () {
+  $(".button-close").click(function () {
     $(".overlay").removeClass("active");
     $(".popup").removeClass("active");
     $(".full-image").hide();

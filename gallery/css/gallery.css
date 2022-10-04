@@ -1,44 +1,31 @@
 @font-face {
   font-family: 'latoregular';
-  src: url('../fonts/lato-regular-webfont.eot');
-  src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/lato-regular-webfont.woff2') format('woff2'),
-  url('../fonts/lato-regular-webfont.woff') format('woff'),
-  url('../fonts/lato-regular-webfont.ttf') format('truetype'),
-  url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+  src: url('../../fonts/lato-regular-webfont.eot');
+  src: url('../../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/lato-regular-webfont.woff2') format('woff2'),
+  url('../../fonts/lato-regular-webfont.woff') format('woff'),
+  url('../../fonts/lato-regular-webfont.ttf') format('truetype'),
+  url('../../fonts/lato-regular-webfont.svg#latoregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'fontello';
-  src: url('../fonts/fontello.eot');
-  src: url('../fonts/fontello.eot#iefix') format('embedded-opentype'),
-  url('../fonts/fontello.woff2') format('woff2'),
-  url('../fonts/fontello.woff') format('woff'),
-  url('../fonts/fontello.ttf') format('truetype'),
-  url('../fonts/fontello.svg#fontello') format('svg');
+  src: url('../../fonts/fontello.eot');
+  src: url('../../fonts/fontello.eot#iefix') format('embedded-opentype'),
+  url('../../fonts/fontello.woff2') format('woff2'),
+  url('../../fonts/fontello.woff') format('woff'),
+  url('../../fonts/fontello.ttf') format('truetype'),
+  url('../../fonts/fontello.svg#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-/*@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg#fontello') format('svg');
-  }
-}*/
-/*
-.icon-link:before { content: '\e800'; } 
-.icon-cancel:before { content: '\e801'; } 
-.icon-zoom-in:before { content: '\e802'; } */
-
 body {
   margin: 0;
-  background: url("../../images/jim-beam-bourbon-vecher-bar-bokal-butylka-chernyi-burbon.jpg") center center no-repeat scroll;
   font-family: 'latoregular', sans-serif;
   font-size: 15px;
-
 }
 
 .portfolio {
@@ -164,7 +151,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: auto;
-
   color: #e15353;
   position: absolute;
   top: 50%;
@@ -180,7 +166,6 @@ body {
   content: "\e800";
 }
 
-/*lesson 11*/
 .overlay {
   position: fixed;
   top: 0;
@@ -227,7 +212,7 @@ body {
   display: block;
 }
 
-.close {
+.button-close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -239,64 +224,23 @@ body {
   border-radius: 5px;
 }
 
-.close:after {
+.button-close:after {
   font: normal normal normal 14px/1 "fontello";
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "\e801";
-
+  content: '\e801';
   display: inline-block;
   font-size: 15px;
   vertical-align: middle;
 }
 
-.close:hover {
+.button-close:hover {
   background: #f74c26;
   cursor: pointer;
 }
 
-@media (min-width: 700px) {
-  .preview {
-    max-height: 260px;
-    min-height: 260px;
-  }
-}
-.forms {
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  font-size: 20px;
-}
-
-.forms p {
-  text-align: center;
-}
-
-label {
-  width: 110px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  margin: 15px;
-}
-
-fieldset input {
-  width: 50%;
-  height: 30px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-textarea{
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid black;
-}
-
-fieldset {
-  border: none;
-}
-.submit, .food, .interior {
+.food, .interior {
   padding: 10px 18px;
   background-color: black;
   color: #f45f0b;
@@ -306,16 +250,16 @@ fieldset {
   box-shadow: 10px 10px 20px black;
   cursor: pointer;
 }
-.submit:active {
-  background: #f45f0b;
-  color: black;
-  box-shadow: 0 0 10px black;
-  border: 2px solid black;
-  font-weight: bold;
-}
 
 .current a {
   color: #fff;
+}
+
+@media (min-width: 700px) {
+  .preview {
+    max-height: 260px;
+    min-height: 260px;
+  }
 }
 
 @media all and (max-width: 480px) {

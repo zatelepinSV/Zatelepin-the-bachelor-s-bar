@@ -9,7 +9,6 @@ body {
 img {
     width: 100vw;
     object-fit: cover;
-
     opacity: .3;
 }
 
@@ -22,6 +21,7 @@ img {
     height: 100vh;
     transition: all ease 1s;
 }
+
 .Who-we-are {
     width: 50%;
     position: absolute;
@@ -30,6 +30,7 @@ img {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .visit-us {
     width: 50%;
     position: absolute;
@@ -38,6 +39,7 @@ img {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .connect-us {
     width: 50%;
     position: absolute;
@@ -48,31 +50,38 @@ img {
 }
 
 
-
 .slider-prev {
     position: fixed;
     left: 1%;
     top: 50%;
 }
-.slider-next{
+
+.slider-next {
     position: fixed;
     right: 1%;
     top: 50%;
 }
+
 .btn {
     width: 50px;
     height: 50px;
-    background-color: #f45f0b;
-    border: 2px solid black;
+    background-color: #000;
+    border: 2px solid #f45f0b;
     border-radius: 50%;
     opacity: 0.6;
     font-weight: bold;
     cursor: pointer;
+    color: #f45f0b;
 }
 
 .btn:active {
+    transform: scale(0.95);
+}
+
+.btn:hover {
     opacity: 1;
 }
+
 .current a {
     color: #fff;
 }

@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Bachelor's Bar</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="shared.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,7 +19,7 @@
             <a href="#">bb</a>
           </li>
           <li class="main-nav__reservation">
-            <a href="" class="button">
+            <a href="#" class="button">
               <span class="button__line button__line--top"></span>
               <span class="button__line button__line--right"></span>
               <span class="button__line button__line--bottom"></span>
@@ -58,7 +58,7 @@
           </h1>
         </div>
       </section>
-      <section class="block1">
+      <section class="traditional-ideas">
         <h4>Traditional ideas, contemporary execution.</h4>
         <p>
           Each of our three floors offer a distinctly different experience. For bottled punch, mixed drinks and
@@ -70,7 +70,7 @@
         </p>
       </section>
       <section class="description">
-        <div class="block3">
+        <div class="the-taproom">
           <h1>THE TAPROOM</h1>
           <h3>GREAT FOOD, GREAT SERVICE, GREAT CRAIC.</h3>
           <p>Our Taproom is a true celebration of that greatest Irish institution, the pub. Traditional Irish pub fare
@@ -81,7 +81,7 @@
           </p>
         </div>
         <div class="image">
-          <img src="images/barley-island-beer-pivo.jpg" alt="bokal pivka">
+          <img src="images/different/bokal_piva.jpg" alt="bokal-pivka">
         </div>
       </section>
       <section class="about">
@@ -108,38 +108,53 @@
           </ul>
         </div>
       </section>
-
       <div class="slideshow">
         <div class="slideshow-item">
-          <img src="images/bar-stoika-vypivka-alkogol-butylki-stulia.jpg" alt="">
-          <div class="slideshow-item-text">
-            <h5>Заголовок</h5>
-            <p>Описание</p>
-          </div>
+          <img src="images/interior/bar-stoika.jpg" alt="barnaya-stoika">
         </div>
         <div class="slideshow-item">
-          <img src="images/bar-napitki-alkogol.jpg" alt="">
-          <div class="slideshow-item-text">
-            <h5>Заголовок</h5>
-            <p>Описание</p>
-          </div>
+          <img src="images/different/bottles.jpg" alt="bottles">
         </div>
         <div class="slideshow-item">
-          <img src="images/pivo-bar-makro.jpg" alt="">
-          <div class="slideshow-item-text">
-            <h5>Заголовок</h5>
-            <p>Описание</p>
-          </div>
+          <img src="images/interior/pivo-bar-makro.jpg" alt="pivo-bar-makro">
         </div>
         <div class="slideshow-item">
-          <img src="images/vecher-bar-viski-stol-svechi-bokaly-para-bourbon-whiskey-jim.jpg" alt="">
-          <div class="slideshow-item-text">
-            <h5>Заголовок</h5>
-            <p>Описание</p>
-          </div>
+          <img src="images/different/ruka-bokal.jpg" alt="ruka_i_bokal">
         </div>
       </div>
-
+      <div class="reservation">
+        <div class="bg-reservation"></div>
+        <div class="box">
+          <div class="close">
+            <span class="btn-close"></span>
+          </div>
+          <form action="#" class="form">
+            <h1 class="form__title">Table reservation</h1>
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder=" " required>
+              <label class="form__label">Name</label>
+            </div>
+            <div class="form__group">
+              <input type="date" class="form__input" placeholder=" ">
+              <label class="form__label">Date</label>
+            </div>
+            <div class="form__group">
+              <input type="number" class="form__input" placeholder=" ">
+              <label class="form__label">Humans</label>
+            </div>
+            <div class="form__group">
+              <input type="time" class="form__input" placeholder=" ">
+              <label class="form__label">Time</label>
+            </div>
+            <div class="form__group">
+              <input type="tel" class="form__input" placeholder=" " required>
+              <label class="form__label">Phone number</label>
+            </div>
+            <button class="form__button">Reserved</button>
+            <button type="reset" class="form__button">Clear</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="main-footer">
       <nav>
@@ -162,7 +177,8 @@
         </ul>
       </nav>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/home.js"></script>
+    <script src="reservation/reservation.js"></script>
   </body>
 </html>

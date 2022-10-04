@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Location</title>
-    <link rel="stylesheet" href="location.css">
+    <link rel="stylesheet" href="css/location.css">
     <link rel="stylesheet" href="../shared.css">
     <link rel="shortcut icon" href="../images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,7 +19,7 @@
             <a href="#">bb</a>
           </li>
           <li class="main-nav__reservation">
-            <a href="" class="button">
+            <a href="#" class="button">
               <span class="button__line button__line--top"></span>
               <span class="button__line button__line--right"></span>
               <span class="button__line button__line--bottom"></span>
@@ -45,10 +45,11 @@
         </ul>
       </nav>
     </header>
-
-
     <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6888.244987205344!2d-104.8709820813521!3d39.731471828713964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7cead7027b21%3A0xa62bce6bb2ff8cdb!2zMTA5NiBGbG9yZW5jZSBTdCwgQXVyb3JhLCBDTyA4MDAxMCwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1664456822192!5m2!1sru!2sby" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6888.244987205344!2d-104.8709820813521!3d39.731471828713964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7cead7027b21%3A0xa62bce6bb2ff8cdb!2zMTA5NiBGbG9yZW5jZSBTdCwgQXVyb3JhLCBDTyA4MDAxMCwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1664456822192!5m2!1sru!2sby"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="description">
       <div class="name">
@@ -63,6 +64,39 @@
         <h4>WORK FOR US</h4>
         <p>Join the team:</p>
         <p>write to us: info@TheBachelorsBar</p>
+      </div>
+    </div>
+    <div class="reservation">
+      <div class="bg-reservation"></div>
+      <div class="box">
+        <div class="close">
+          <span class="btn-close"></span>
+        </div>
+        <form action="#" class="form">
+          <h1 class="form__title">Table reservation</h1>
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder=" " required>
+            <label class="form__label">Name</label>
+          </div>
+          <div class="form__group">
+            <input type="date" class="form__input" placeholder=" ">
+            <label class="form__label">Date</label>
+          </div>
+          <div class="form__group">
+            <input type="number" class="form__input" placeholder=" ">
+            <label class="form__label">Humans</label>
+          </div>
+          <div class="form__group">
+            <input type="time" class="form__input" placeholder=" ">
+            <label class="form__label">Time</label>
+          </div>
+          <div class="form__group">
+            <input type="tel" class="form__input" placeholder=" " required>
+            <label class="form__label">Phone number</label>
+          </div>
+          <button class="form__button">Reserved</button>
+          <button type="reset" class="form__button">Clear</button>
+        </form>
       </div>
     </div>
     <footer class="main-footer">
@@ -88,5 +122,6 @@
     </footer>
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="js/location.js"></script>
+    <script src="../reservation/reservation.js"></script>
   </body>
 </html>
