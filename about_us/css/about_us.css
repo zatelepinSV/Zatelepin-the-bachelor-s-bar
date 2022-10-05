@@ -18,7 +18,7 @@ img {
     background-size: cover;
     display: flex;
     width: 100vw;
-    height: 100vh;
+
     transition: all ease 1s;
 }
 
