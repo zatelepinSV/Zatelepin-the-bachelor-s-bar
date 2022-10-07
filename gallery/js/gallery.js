@@ -43,5 +43,5 @@ $(function () {
     $('.food').css('opacity', '1')
     $('.interior').css('opacity', '.3')
   });
-
+  $('.current').css('color', 'white');
 });

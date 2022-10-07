@@ -1,5 +1,6 @@
-$(document).ready(function () {
-  $('.main-nav__reservation .button').click(function () {
+$(document).ready(function (e) {
+
+  $('.reservation-btn').click(function () {
     $('.reservation').css('display', 'block')
   });
 

@@ -1,17 +1,13 @@
 $(document).ready(function () {
-  var link = $('.menu-link');
-  var link_active = $('.menu-link_active');
 
-  link.click(function () {
+  var link = $('.menu-link');
+  var link_active = $('.main-nav__items');
+
+  link.click(function (e) {
+    e.preventDefault();
     link.toggleClass('menu-link_active');
+    link_active.toggleClass('active');
+
   });
-  link_active.click(function () {
-    removeClass('menu-link_active');
-  });
-  $('.main-nav__items [href]').each(function () {
-    if (this.href == window.location.href) {
-      $(this).addClass("active");
-    }
-  });
+  $('.current').css('color', 'white');
 });
-$('.current a').css('color', 'white');

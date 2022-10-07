@@ -14,7 +14,7 @@ $(document).ready(function () {
     .forEach(function (section) {
       section.addEventListener('click', accordionHeaderClickHandler)
     })
-  $('.current a').css('color', 'white');
+  $('.current').css('color', 'white');
 
 });
 

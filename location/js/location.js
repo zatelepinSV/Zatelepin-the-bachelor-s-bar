@@ -1,4 +1,4 @@
 $(document).ready(function () {
-  $('.current a').css('color', 'white');
+  $('.current').css('color', 'white');
 });
 
