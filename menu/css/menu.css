@@ -81,9 +81,8 @@ body {
 }
 
 .accordion-body > * {
-    padding: 20px;
-    margin: 0;
     display: block;
+    margin: 0;
 }
 
 .line {
@@ -97,10 +96,13 @@ td {
 
 .food {
     display: flex;
-    justify-content: space-between;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #000;
-    padding: 10px 0;
+}
+.food:last-child {
+    border: none;
 }
 
 table {
@@ -110,3 +112,40 @@ table {
 h5 {
     color: #89888a;
 }
+
+.wine-position {
+    display: block;
+    width: 100%;
+    border-bottom: 2px dotted black;
+    text-align: center;
+}
+
+@media all and (min-width: 640px) {
+
+}
+
+
+@media all and (max-width: 640px) {
+    .accordion {
+        width: 100%;
+    }
+
+    .food {
+        display: block;
+        text-align: center;
+    }
+
+    .cards-holder {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .card {
+        width: 100%;
+        margin-right: 0;
+    }
+    .card-description {
+        padding-bottom: 10px;
+    }
+}
+

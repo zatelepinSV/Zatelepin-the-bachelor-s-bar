@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="../shared.css">
@@ -147,29 +148,27 @@
             WINE
           </div>
           <div class="accordion-body">
-            <div>
-              <table>
-                <tr>
-                  <td class="line">PINOT NOIR, UNCONDITIONAL ‘BATTLE CREEK CELLARS’, WILAMETTE VALLEY, OR 2020
-                    <p>$15 GLASS / $59 BOTTLE</p>
-                  </td>
-
-                </tr>
-                <tr>
-                  <td class="line">MALBEC, CORAZON DEL SOL, MENDOZA, ARGENTINA, 2017
-                    <p>$16 GLASS / $67 BOTTLE</p>
-                  </td>
-
-                </tr>
-                <tr>
-                  <td class="line">CABERNET SAUVIGNON, B.R. COHN, NORTH COAST, CA 2018
-                    <p>$18 GLASS / $76 BOTTLE</p>
-                  </td>
-                </tr>
-              </table>
+            <div class="wine">
+              <div class="wine-position">
+                <hgroup>
+                  <h4>PINOT NOIR, UNCONDITIONAL ‘BATTLE CREEK CELLARS’, WILAMETTE VALLEY, OR 2020</h4>
+                  <h5>$15 GLASS / $59 BOTTLE</h5>
+                  </hgroup>
+              </div>
+              <div class="wine-position">
+                <hgroup>
+                  <h4>MALBEC, CORAZON DEL SOL, MENDOZA, ARGENTINA, 2017</h4>
+                  <h5>$16 GLASS / $67 BOTTLE</h5>
+                </hgroup>
+              </div>
+              <div class="wine-position">
+                <hgroup>
+                  <h4>CABERNET SAUVIGNON, B.R. COHN, NORTH COAST, CA 2018</h4>
+                  <h5>$18 GLASS / $76 BOTTLE</h5>
+                  </hgroup>
+              </div>
             </div>
           </div>
-        </div>
         <div class="accordion-section">
           <div class="accordion-header">
             FOOD
@@ -177,62 +176,62 @@
           <div class="accordion-body">
             <div>
               <div class="food">
-                <div>
+                <hgroup>
                   <h1>HOUSE-MADE CHIPS WITH DIPS</h1>
                   <h5>Curry Mayo, Ketchup, Sarson’s Malt Vinegar Aioli (V) (GF)</h5>
                   <h4>$13</h4>
-                </div>
+                </hgroup>
                 <div class="food-img">
                   <img src="../images/menu/DR_051922_LizClayman_925.png" alt="food">
                 </div>
               </div>
               <div class="food">
-                <div>
+                <hgroup>
                   <h1>HOUSE-MADE BREAD BASKET</h1>
                   <h5>Wheaten Bread, Soda Bread & Potato Bread with Kerrygold Butter & Gubbeen Fondue (V)</h5>
                   <h4>$18</h4>
-                </div>
+                </hgroup>
                 <div class="food-img">
                   <img src="../images/menu/Bread+Website.jpg" alt="food">
                 </div>
               </div>
               <div class="food">
-                <div>
+                <hgroup>
                   <h1>IRISH POINTS OYSTERS</h1>
                   <h5>Prince Edward Island (GF)</h5>
                   <h4>3.75 each</h4>
-                </div>
+                </hgroup>
                 <div class="food-img">
                   <img src="../images/menu/DR_LizClayman_937.jpg" alt="food">
                 </div>
               </div>
               <div class="food">
-                <div>
+                <hgroup>
                   <h1>CRAB, CAULIFLOWER & CHEESE FRITTERS</h1>
-                  <h5>Parsley Aioli</h5>
+                  <h5>Pahgroupey Aioli</h5>
                   <h4>$19</h4>
-                </div>
+                </hgroup>
                 <div class="food-img">
                   <img src="../images/menu/DR_LizClayman_1723.jpg" alt="food">
                 </div>
               </div>
               <div class="food">
-                <div>
+                <hgroup>
                   <h1>IRISH CHEESE BOARD</h1>
                   <h5>Irish Cheddar, Gubbeen, Cashel Blue, Jacob’s Cream Crackers, Sliced Pears, Quince Jelly, Dried
                     Figs (V)</h5>
                   <h4>$19</h4>
-                </div>
+                </hgroup>
                 <div class="food-img">
                   <img src="../images/menu/DR_LizClayman_1606.jpg" alt="food">
                 </div>
               </div>
               <div class="food">
-                <div>
+                <hgroup>
                   <h1>BEER-BATTERED FRIED CHICKEN</h1>
                   <h5>Harp Lager Batter, McDonnell’s Curried Ranch</h5>
                   <h4>$18</h4>
-                </div>
+                </hgroup>
                 <div class="food-img">
                   <img src="../images/menu/DR_LizClayman_046(1).jpg" alt="food">
                 </div>
@@ -241,6 +240,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
     <div class="reservation">
       <div class="bg-reservation"></div>
@@ -297,6 +297,7 @@
       </nav>
     </footer>
     <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/home.js"></script>
     <script src="js/menu.js"></script>
     <script src="../reservation/reservation.js"></script>
   </body>
