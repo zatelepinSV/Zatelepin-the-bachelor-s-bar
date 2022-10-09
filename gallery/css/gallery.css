@@ -35,15 +35,9 @@ body {
 }
 
 .portfolio-heading {
-    padding-top: 10%;
-    margin: 0;
-    font-size: 41px;
+    margin-top: 15vh;
+    font-size: 2.5rem;
 }
-
-/*.portfolio-subline {
-    padding: 20px 0;
-    line-height: 23px;
-}*/
 
 .buttons {
     margin: 20px;
@@ -262,8 +256,6 @@ body {
         font-size: 1rem;
     }
     .portfolio-heading {
-        margin-top: 35%;
-        padding-top: 0;
         font-size: 2rem;
     }
     .portfolio {

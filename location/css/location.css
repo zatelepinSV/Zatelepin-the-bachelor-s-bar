@@ -6,7 +6,7 @@ body {
 }
 .map {
     display: block;
-    margin-top: 7%;
+    margin-top: 15vh;
     width: 100%;
     height: 450px;
 }
@@ -45,20 +45,10 @@ body {
     }
     .map {
         display: block;
-        margin-top: 20%;
     }
 }
-/*
-@media all and (max-width: 480px) {
-    .portfolio-heading {
-        display: block;
-        margin: 20% auto 10%;
+@media all and (max-width: 640px) {
+    .address, .name {
+        width: 80%;
     }
 }
-
-@media screen and (max-width: 30em)  {
-    .portfolio-heading {
-        display: block;
-        margin: 5% auto;
-    }
-*/
