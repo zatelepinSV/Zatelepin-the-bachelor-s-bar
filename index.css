@@ -239,27 +239,6 @@ body {
     }
 }
 
-/*@media screen and (max-width: 1100px) {
-    .slideshow-item-text {
-        max-width: 75%;
-    }
-}*/
-
-/*@media screen and (max-width: 456px) {
-    .slideshow-item-text {
-        bottom: 0;
-        left: 0;
-        max-width: 100%;
-    }
-
-    .slideshow-item-text h5 {
-        font-size: 1.125rem;
-    }
-
-    .slideshow-item-text p {
-        font-size: 0.813rem;
-    }
-}*/
 @media all and (max-width: 82rem) {
     .the-taproom {
         width: 100%;

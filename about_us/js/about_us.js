@@ -1,3 +1,4 @@
+/*
 $(document).ready(function () {
   let offset = 0;
   const sliderLine = document.querySelector('.slider-line');
@@ -19,4 +20,4 @@ $(document).ready(function () {
     sliderLine.style.left = -offset + 'vw'
   });
   $('.current').css('color', 'white');
-});
+});*/
