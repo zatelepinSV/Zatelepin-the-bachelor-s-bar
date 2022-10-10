@@ -1,14 +1,14 @@
 body {
-    font-family: Constantia, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Constantia, sans-serif;
     background-color: #FFFAF0;
     box-sizing: border-box;
 }
 
 .bg {
-    background-image: url("../../images/food/food5.jpg");
     height: 60vh;
+    background-image: url("../../images/food/food5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,12 +19,13 @@ body {
 }
 
 .card {
-    width: 13%;
+    width: 250px;
     margin-top: -2%;
     margin-right: 30px;
     padding: 0 10px;
     box-shadow: 10px 10px 10px black;
     background-color: #fff;
+    font-size: 1.3rem;
 }
 
 .card-image,
@@ -35,8 +36,8 @@ body {
 }
 
 .card-description {
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .card-img {
@@ -45,11 +46,12 @@ body {
 
 .card-title {
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .accordion {
-    margin: 5% auto;
     display: block;
+    margin: 5% auto;
     width: 50%;
 
 }
@@ -73,11 +75,11 @@ body {
 }
 
 .accordion-body {
+    margin: 0 10px;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-in;
     box-sizing: border-box;
-    margin: 0 10px;
 }
 
 .accordion-body > * {
@@ -101,6 +103,7 @@ td {
     align-items: center;
     border-bottom: 1px solid #000;
 }
+
 .food:last-child {
     border: none;
 }
@@ -120,12 +123,11 @@ h5 {
     text-align: center;
 }
 
-@media all and (min-width: 640px) {
-
-}
-
-
 @media all and (max-width: 640px) {
+    body {
+        font-size: 1.3rem;
+    }
+
     .accordion {
         width: 100%;
     }
@@ -137,7 +139,8 @@ h5 {
 
     .cards-holder {
         display: block;
-        width: 100%;
+        margin: 0 auto;
+        width: 70%;
         text-align: center;
     }
     .card {

@@ -1,4 +1,5 @@
 $(function () {
+  "use strict";
   //zoom img onclick
   $(".zoom").click(function () {
     $(".hover-buttons").css("visibility", "hidden");

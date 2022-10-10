@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+  "use strict";
   var accordionHeaderClickHandler = function (e) {
     document.querySelectorAll('.accordion-section')
       .forEach(function (section) {

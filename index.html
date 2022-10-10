@@ -51,10 +51,8 @@
       </nav>
     </header>
     <main>
-      <div id="up">
-        <a href="#" class="btn">
-          <span>up</span>
-        </a>
+      <div class="up hide">
+        <div class="strelka"></div>
       </div>
       <section id="background">
         <div class="background">
@@ -64,7 +62,10 @@
         </div>
       </section>
       <section class="traditional-ideas">
-        <h4>Traditional ideas, contemporary execution.</h4>
+        <hgroup>
+          <h1>EXQUISITE COCTAL BAR</h1>
+          <h3>Traditional ideas, contemporary execution.</h3>
+        </hgroup>
         <p>
           Each of our three floors offer a distinctly different experience. For bottled punch, mixed drinks and
           lively service, visit the Taproom. For a cocktail menu like no other, join us in the Parlor. For private
@@ -76,8 +77,10 @@
       </section>
       <section class="description">
         <div class="the-taproom">
-          <h1>THE TAPROOM</h1>
-          <h3>GREAT FOOD, GREAT SERVICE, GREAT CRAIC.</h3>
+          <hgroup>
+            <h1>THE TAPROOM</h1>
+            <h3>GREAT FOOD, GREAT SERVICE, GREAT CRAIC.</h3>
+          </hgroup>
           <p>Our Taproom is a true celebration of that greatest Irish institution, the pub. Traditional Irish pub fare
             made with the best ingredients is served alongside tavern-inspired cocktails, bottled punch, pints of
             plain
@@ -90,20 +93,20 @@
         </div>
       </section>
       <section class="about">
-        <div class="opening">
-          <h1>opening hours</h1>
-          <h4>
-            Sun—Thurs 12pm til’ 2 am<br>
-            Fri—Sat 12pm til’ 3 am
-          </h4>
-        </div>
-        <div class="visit">
+          <hgroup class="opening">
+            <h1>opening hours</h1>
+            <h4>
+              Sun—Thurs 12pm till 2 am<br>
+              Fri—Sat 12pm till 3 am
+            </h4>
+          </hgroup>
+        <hgroup class="visit">
           <h1>visit us</h1>
           <h4>
-            30 Water Street<br>
-            New York, NY, 10004
+            1096 Florence St<br>
+            Aurora, CO, 80010, USA
           </h4>
-        </div>
+        </hgroup>
         <div class="follow">
           <h1>follow our journey</h1>
           <ul class="social-list">
@@ -155,8 +158,10 @@
               <input type="tel" class="form__input" placeholder=" " required>
               <label class="form__label">Phone number</label>
             </div>
-            <button class="form__button">Reserved</button>
-            <button type="reset" class="form__button">Clear</button>
+            <div class="form-btn-container">
+              <button class="form__button">Reserved</button>
+              <button type="reset" class="form__button">Clear</button>
+            </div>
           </form>
         </div>
       </div>
@@ -182,8 +187,8 @@
         </ul>
       </nav>
     </footer>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/home.js"></script>
-    <script src="reservation/reservation.js"></script>
+    <script src="js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/home/home.js"></script>
+    <script src="js/reservation/reservation.js"></script>
   </body>
 </html>

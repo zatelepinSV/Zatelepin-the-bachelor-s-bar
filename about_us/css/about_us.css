@@ -1,14 +1,15 @@
-/*body {
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: Constantia, sans-serif;
     font-size: 1.5rem;
+    background-color: #FFFAF0;
 }
-.block {
+
+.slider-block {
     position: relative;
-    width: 100vw;
-    height: 70vh;
+    box-shadow: 10px 10px 30px;
 }
 
 img {
@@ -26,33 +27,53 @@ img {
     transition: all ease 1s;
 }
 
-.who-we-are {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.description {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 2% 10%;
+    padding: 2%;
     text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #000;
 }
 
-.visit-us {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    right: -100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
+.who-we-are,
+.visit-us,
 .connect-us {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    right: -200%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    display: inline-block;
+    width: 300px;
+    margin: 2%;
 }
 
+.go-location a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #f45f0b;
+}
+
+.go-location a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background-color: #000;
+    transform: scalex(0);
+    transition: 0.3s;
+}
+
+.go-location a:hover {
+    color: #89888a;
+}
+
+.go-location a:hover:before {
+    color: #000;
+    transform: scalex(1);
+}
 
 .slider-prev {
     position: absolute;
@@ -78,17 +99,32 @@ img {
     color: #f45f0b;
 }
 
-.btn:active {
-    transform: scale(0.95);
-}
-
 .btn:hover {
     opacity: 1;
+}
+
+.btn:active {
+    transform: scale(0.95);
 }
 
 .current a {
     color: #fff;
 }
+
 .slider {
-    height: 100vh;
-}*/
+    height: 600px;
+}
+
+@media all and (max-width: 1400px) {
+    .who-we-are,
+    .connect-us {
+        border-bottom: 1px solid black;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: 1.3rem;
+    }
+
+}

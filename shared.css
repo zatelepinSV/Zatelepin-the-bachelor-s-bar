@@ -73,6 +73,38 @@
 .nav a:hover {
     color: #fff;
 }
+/*button up*/
+.up {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 10px;
+    opacity: .3;
+    cursor: pointer;
+    z-index: 50;
+    transition: 1s;
+}
+.strelka {
+    position: absolute;
+    top: 40%;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transform: rotate(45deg);
+}
+
+.up:hover {
+    opacity: 1;
+}
+.hide {
+    display: none;
+}
 
 /*burger*/
 .menu-link {
@@ -140,7 +172,6 @@
 .button {
     position: relative;
     display: block;
-
     color: #f45f0b;
     text-transform: uppercase;
     text-decoration: none;
@@ -337,13 +368,13 @@
     background-color: rgba(169, 115, 20, 0.45);
     z-index: 10;
 }
-
+/*reservation*/
 .box {
     position: fixed;
     left: 50%;
     top: 50%;
-    width: 20%;
-    padding: 5%;
+    width: 25%;
+    padding: 2%;
     transform: translate(-50%,-50%);
     border: 2px solid #f45f0b;
     border-radius: 20px;
@@ -380,6 +411,7 @@
 .form__label {
     position: absolute;
     top: 0;
+    left: 0;
     z-index: -1;
     color: #89888a;
     transition: 0.3s;
@@ -432,6 +464,10 @@
     position: relative;
     display: none;
 }
+.form-btn-container {
+    display: flex;
+    justify-content: space-around;
+}
 
 .btn-close {
     position: absolute;
@@ -470,7 +506,7 @@ form h1 {
     text-align: center;
 }
 
-@media all and (max-width: 87.5rem) {
+@media all and (max-width: 1400px) {
     .burger-menu {
         display: flex;
     }
@@ -499,6 +535,9 @@ form h1 {
         transition: all 0.5s ease-in-out;
         text-align: center;
     }
+    .box {
+        width: 30%;
+    }
 }
 @media all and (max-width: 640px) {
     .social__item {
@@ -508,5 +547,20 @@ form h1 {
     }
     .reservation-btn {
         font-size: 1rem;
+    }
+    .box {
+        width: 70%;
+    }
+}
+@media all and (max-width: 330px) {
+    .social {
+        display: block;
+    }
+
+    .social__item {
+        margin: 0.625rem;
+    }
+    .box {
+        width: 90%;
     }
 }

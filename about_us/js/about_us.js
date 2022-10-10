@@ -1,11 +1,9 @@
-/*
 $(document).ready(function () {
+  "use strict";
   let offset = 0;
   const sliderLine = document.querySelector('.slider-line');
-
   document.querySelector('.slider-next').addEventListener('click', function () {
     offset = offset + 100;
-
     if (offset > 200) {
       offset = 0;
     }
@@ -13,11 +11,10 @@ $(document).ready(function () {
   });
   document.querySelector('.slider-prev').addEventListener('click', function () {
     offset = offset - 100;
-
     if (offset < 0) {
       offset = 200;
     }
     sliderLine.style.left = -offset + 'vw'
   });
   $('.current').css('color', 'white');
-});*/
+});
